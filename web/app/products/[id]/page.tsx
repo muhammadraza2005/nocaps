@@ -1,0 +1,8 @@
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { ProductCard } from "@/components/product-card";
+import { getProduct, products } from "@/lib/catalog";
+import { AddToCart } from "@/components/add-to-cart";
+
+export function generateStaticParams() { return products.map((product) => ({ id: product.id })); }
+export default async function ProductPage({ params }: { params: Promise<{ id: string }> }) { const { id } = await params; const product = getProduct(id); if (!product) notFound(); return <main className="page-width detail-page"><div className="breadcrumbs mono">HOME / SHOP ALL / {product.brand}</div><section className="detail-grid"><div className="detail-image"><img src={product.image} alt={product.name} /></div><div className="detail-copy"><span className="mono">{product.brand}</span><h1 className="display">{product.name}</h1><strong>${product.price.toFixed(2)}</strong><hr /><p>{product.description} Designed for the urban minimalist, it is finished with durable construction and the quiet confidence of the No Caps uniform.</p><div className="size-label mono">SELECT SIZE</div><div className="sizes"><button>S / M</button><button className="selected">L / XL</button><button>XXL</button></div><AddToCart product={product} /><div className="detail-assurances"><span>AUTHENTICITY GUARANTEED</span><span>FREE GLOBAL SHIPPING</span></div></div></section><section className="look-section"><h2 className="display">COMPLETE THE LOOK</h2><div className="product-grid">{products.slice(3, 7).map((item) => <ProductCard key={item.id} product={item} />)}</div></section></main>; }

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NO CAPS | AUTHENTIC STREETWEAR</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Hanken+Grotesk:wght@400;500;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed": "#1b1b1b",
+                    "surface-dim": "#dadada",
+                    "surface-tint": "#5e5e5e",
+                    "on-tertiary-container": "#848484",
+                    "inverse-primary": "#c6c6c6",
+                    "inverse-surface": "#303030",
+                    "tertiary-container": "#1b1b1b",
+                    "on-primary-fixed-variant": "#474747",
+                    "outline": "#7e7576",
+                    "inverse-on-surface": "#f1f1f1",
+                    "surface-container-highest": "#e2e2e2",
+                    "background": "#f9f9f9",
+                    "surface": "#f9f9f9",
+                    "on-tertiary": "#ffffff",
+                    "on-surface-variant": "#4c4546",
+                    "surface-container-high": "#e8e8e8",
+                    "error": "#ba1a1a",
+                    "on-background": "#1b1b1b",
+                    "primary-fixed-dim": "#c6c6c6",
+                    "on-secondary-container": "#616363",
+                    "surface-variant": "#e2e2e2",
+                    "on-error-container": "#93000a",
+                    "surface-container": "#eeeeee",
+                    "on-primary-container": "#848484",
+                    "secondary-fixed-dim": "#c6c6c7",
+                    "surface-bright": "#f9f9f9",
+                    "secondary": "#5d5f5f",
+                    "on-tertiary-fixed": "#1b1b1b",
+                    "primary-container": "#1b1b1b",
+                    "tertiary": "#000000",
+                    "on-secondary-fixed": "#1a1c1c",
+                    "primary-fixed": "#e2e2e2",
+                    "secondary-fixed": "#e2e2e2",
+                    "status-success": "#22C55E",
+                    "outline-variant": "#cfc4c5",
+                    "primary": "#000000",
+                    "on-surface": "#1b1b1b",
+                    "tertiary-fixed": "#e2e2e2",
+                    "on-primary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "tertiary-fixed-dim": "#c6c6c6",
+                    "surface-container-low": "#f3f3f3",
+                    "on-secondary": "#ffffff",
+                    "secondary-container": "#dfe0e0",
+                    "error-container": "#ffdad6",
+                    "status-error": "#EF4444",
+                    "on-secondary-fixed-variant": "#454747",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed-variant": "#474747",
+                    "neutral-gray": "#717171"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-max": "1280px",
+                    "gutter": "24px",
+                    "margin-mobile": "16px",
+                    "base": "8px",
+                    "margin-desktop": "40px"
+            },
+            "fontFamily": {
+                    "body-md": ["Hanken Grotesk"],
+                    "button-text": ["Anton"],
+                    "label-caps": ["JetBrains Mono"],
+                    "headline-md": ["Anton"],
+                    "headline-lg-mobile": ["Anton"],
+                    "display-xl": ["Anton"],
+                    "body-lg": ["Hanken Grotesk"],
+                    "headline-lg": ["Anton"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "160%", "fontWeight": "400"}],
+                    "button-text": ["16px", {"lineHeight": "100%", "letterSpacing": "0.05em", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "140%", "fontWeight": "500"}],
+                    "headline-md": ["32px", {"lineHeight": "120%", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["36px", {"lineHeight": "110%", "fontWeight": "400"}],
+                    "display-xl": ["96px", {"lineHeight": "100%", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "160%", "fontWeight": "400"}],
+                    "headline-lg": ["48px", {"lineHeight": "110%", "letterSpacing": "0.02em", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hard-shadow {
+            box-shadow: 4px 4px 0px #000000;
+        }
+        .text-outline {
+            -webkit-text-stroke: 1px black;
+            color: transparent;
+        }
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-scroll {
+            display: flex;
+            width: max-content;
+            animation: scroll 20s linear infinite;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary selection:text-on-primary font-body-md overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<nav class="w-full sticky top-0 z-50 bg-surface dark:bg-background border-b-2 border-primary dark:border-on-primary-fixed">
+<div class="flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md text-primary dark:text-on-background uppercase cursor-pointer active:scale-95">
+                NO CAPS
+            </div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-body-md text-body-md uppercase tracking-wider text-primary dark:text-on-background border-b-2 border-primary dark:border-on-primary-fixed pb-1 cursor-pointer" href="#">SHOP ALL</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-secondary dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-on-background transition-colors duration-200 cursor-pointer active:scale-95" href="#">NEW ERA</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-secondary dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-on-background transition-colors duration-200 cursor-pointer active:scale-95" href="#">NIKE</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-secondary dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-on-background transition-colors duration-200 cursor-pointer active:scale-95" href="#">ADIDAS</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-secondary dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-on-background transition-colors duration-200 cursor-pointer active:scale-95" href="#">PUMA</a>
+</div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined cursor-pointer hover:bg-primary hover:text-on-primary transition-colors duration-200 p-2 rounded-full" data-icon="shopping_cart">shopping_cart</span>
+<span class="material-symbols-outlined cursor-pointer hover:bg-primary hover:text-on-primary transition-colors duration-200 p-2 rounded-full" data-icon="person">person</span>
+</div>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex flex-col justify-center items-center px-margin-mobile md:px-margin-desktop overflow-hidden bg-gradient-to-b from-primary to-surface-container">
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<div class="h-full w-full" style="background-image: radial-gradient(circle, #000 1px, transparent 1px); background-size: 30px 30px;"></div>
+</div>
+<div class="z-10 text-center max-w-5xl">
+<div class="mb-4">
+<span class="font-label-caps text-label-caps bg-primary text-on-primary px-3 py-1 uppercase tracking-[0.2em]">Authenticity over everything</span>
+</div>
+<h1 class="font-display-xl text-display-xl md:text-[140px] text-on-primary mix-blend-difference mb-8 tracking-tighter uppercase leading-none">
+                    NO CAPS
+                </h1>
+<p class="font-body-lg text-body-lg text-on-primary-fixed-variant max-w-2xl mx-auto mb-10 opacity-90">
+                    The ultimate destination for premium, verified headwear. We curate the culture's most sought-after drops with zero compromise on quality.
+                </p>
+<div class="flex flex-col md:flex-row gap-4 justify-center">
+<button class="bg-primary text-on-primary px-12 py-5 font-button-text text-button-text uppercase hard-shadow hover:bg-surface hover:text-primary transition-all duration-300 active:scale-95">
+                        SHOP NOW
+                    </button>
+<button class="bg-transparent border-2 border-primary text-primary px-12 py-5 font-button-text text-button-text uppercase hover:bg-primary hover:text-on-primary transition-all duration-300 active:scale-95">
+                        VIEW CATALOG
+                    </button>
+</div>
+</div>
+<!-- Absolute floating decoration -->
+<div class="absolute -bottom-10 right-0 opacity-20 hidden md:block select-none">
+<h2 class="font-display-xl text-[200px] text-outline uppercase">STREETWEAR</h2>
+</div>
+</section>
+<!-- Trust Badges Section -->
+<section class="border-y-2 border-primary bg-surface py-12">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+<div class="flex flex-col items-center group">
+<div class="mb-4 p-4 border-2 border-primary group-hover:bg-primary group-hover:text-on-primary transition-colors duration-300">
+<span class="material-symbols-outlined text-[40px]" data-icon="verified_user" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+</div>
+<h3 class="font-headline-md text-headline-md uppercase mb-2">Authenticity</h3>
+<p class="font-label-caps text-label-caps text-on-secondary-container">100% VERIFIED GENUINE GEAR</p>
+</div>
+<div class="flex flex-col items-center group">
+<div class="mb-4 p-4 border-2 border-primary group-hover:bg-primary group-hover:text-on-primary transition-colors duration-300">
+<span class="material-symbols-outlined text-[40px]" data-icon="local_shipping" style="font-variation-settings: 'FILL' 1;">local_shipping</span>
+</div>
+<h3 class="font-headline-md text-headline-md uppercase mb-2">Fast Delivery</h3>
+<p class="font-label-caps text-label-caps text-on-secondary-container">SHIPPED WITHIN 24 HOURS</p>
+</div>
+<div class="flex flex-col items-center group">
+<div class="mb-4 p-4 border-2 border-primary group-hover:bg-primary group-hover:text-on-primary transition-colors duration-300">
+<span class="material-symbols-outlined text-[40px]" data-icon="currency_exchange" style="font-variation-settings: 'FILL' 1;">currency_exchange</span>
+</div>
+<h3 class="font-headline-md text-headline-md uppercase mb-2">Money Back</h3>
+<p class="font-label-caps text-label-caps text-on-secondary-container">30-DAY NO HASSLE RETURNS</p>
+</div>
+</div>
+</section>
+<!-- Trusted Brands Section -->
+<section class="py-20 overflow-hidden bg-surface-container">
+<div class="mb-12 text-center px-margin-desktop">
+<h2 class="font-headline-lg text-headline-lg uppercase mb-4">TRUSTED BRANDS</h2>
+<div class="w-24 h-1 bg-primary mx-auto"></div>
+</div>
+<div class="relative w-full">
+<div class="animate-scroll">
+<!-- Set 1 -->
+<div class="flex items-center gap-24 px-12">
+<span class="font-headline-md text-headline-md text-primary opacity-40 hover:opacity-100 transition-opacity cursor-pointer">NIKE</span>
+<span class="font-headline-md text-headline-md text-primary opacity-40 hover:opacity-100 transition-opacity cursor-pointer">ADIDAS</span>
+<span class="font-headline-md text-headline-md text-primary opacity-40 hover:opacity-100 transition-opacity cursor-pointer">NEW ERA</span>
+<span class="font-headline-md text-headline-md text-primary opacity-40 hover:opacity-100 transition-opacity cursor-pointer">PUMA</span>
+<span class="font-headline-md text-headline-md text-primary opacity-40 hover:opacity-100 transition-opacity cursor-pointer">REEBOK</span>
+<span class="font-headline-md text-headline-md text-primary opacity-40 hover:opacity-100 transition-opacity cursor-pointer">CHAMPION</span>
+</div>
+<!-- Set 2 (Duplicate for infinite) -->
+<div class="flex items-center gap-24 px-12">
+<span class="font-headline-md text-headline-md text-primary opacity-40 hover:opacity-100 transition-opacity cursor-pointer">NIKE</span>
+<span class="font-headline-md text-headline-md text-primary opacity-40 hover:opacity-100 transition-opacity cursor-pointer">ADIDAS</span>
+<span class="font-headline-md text-headline-md text-primary opacity-40 hover:opacity-100 transition-opacity cursor-pointer">NEW ERA</span>
+<span class="font-headline-md text-headline-md text-primary opacity-40 hover:opacity-100 transition-opacity cursor-pointer">PUMA</span>
+<span class="font-headline-md text-headline-md text-primary opacity-40 hover:opacity-100 transition-opacity cursor-pointer">REEBOK</span>
+<span class="font-headline-md text-headline-md text-primary opacity-40 hover:opacity-100 transition-opacity cursor-pointer">CHAMPION</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Products (Bento Style) -->
+<section class="px-margin-desktop py-20 max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="md:col-span-2 md:row-span-2 border-2 border-primary relative group overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A high-contrast editorial photograph of a premium black streetwear cap with minimalist white embroidery, set against a stark industrial concrete background. Harsh studio lighting creates deep, dramatic shadows, emphasizing the texture of the fabric. The composition is asymmetrical and modern, aligning with a brutalist fashion aesthetic. The overall mood is serious, authentic, and high-end." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCO52iqIAnFnOQ3cTmPlERBbbcphTvii36BMtb-1A4tYS8TGD629bRtdxy8ibiyPoiWKrDRiihWS_tn-fHgqGXAh3eGeRlP_VapGutubKm43t4jWJQIysuTtyrZvrA7O7XYCpVkFDn7-3DlzP0w6OxIsGGf_8NBxFFUzYrMTBLwgJW_Ul0IAdgApi-MzALkq6d6cd_8e8ybxm6YEVJ7I6dMOJq8uOZV38KDibKQxb-7-rjY5MI6YNgcfketFY_g8H2B1R84TrQqdDE"/>
+<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+<h4 class="font-headline-md text-headline-md text-on-primary uppercase">Elite Collection</h4>
+<p class="font-label-caps text-label-caps text-on-primary mt-2">LIMITED EDITION DROPS</p>
+</div>
+</div>
+<div class="md:col-span-2 border-2 border-primary bg-primary p-8 flex flex-col justify-between">
+<div>
+<h4 class="font-headline-md text-headline-md text-on-primary uppercase mb-4">New Era Exclusive</h4>
+<p class="font-body-md text-body-md text-on-primary opacity-80 mb-6">Explore the latest collaboration series featuring premium materials and iconic silhouettes.</p>
+</div>
+<a class="font-label-caps text-label-caps text-on-primary underline tracking-widest hover:text-surface-tint transition-colors" href="#">EXPLORE COLLECTION</a>
+</div>
+<div class="border-2 border-primary group relative overflow-hidden">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Close-up photograph of a classic white sports brand cap on a black reflective surface. Sharp lighting highlights the fine stitching of the logo and the curve of the brim. The background is a clean, minimalist gray gradient. The visual style is premium e-commerce photography with a focus on product detail and high-contrast minimalism." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw3k2fwOtYaJ7750EnwtTrzKwmsS7s_HgShHNMwSN-Eswir-Xy503XGYpCapYne89B8baGYyJU85UQhhV8SEbDM5F6BWQpVJ9cZBVofd8WYAwY_XiPkXInrDvMlO9VenLs_8TomtDJ16ubarupdNEZAgAXi4qfvM1RBvgr19aaL7v9aQnCM06jIqQNBLVU_JiKydLrCwJoMxYUZCbyEIMRmskhdFXvvMSQUvY1_X-9eiYM9Y5LLk0csIG-Qpe7jA6Gsmj7ta2DthA"/>
+<div class="absolute bottom-4 left-4 bg-primary text-on-primary px-3 py-1 font-label-caps text-label-caps">NIKE</div>
+</div>
+<div class="border-2 border-primary group relative overflow-hidden">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Dynamic shot of an urban streetwear enthusiast wearing a bold navy blue cap, looking away from the camera. The background shows blurred city lights and industrial architecture. The lighting is cool-toned and moody, capturing a high-fashion streetwear vibe. The color palette is dominated by deep blues, blacks, and sharp whites." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0pdbz6U529JZvb_0NafX60uQQbcjOuUAJo0g9mmTONeVfzWVQCaW9gtLgXMkhwid3mrzFS-wEJ6W581UYKvUeH4goHbOy-eEuNuocdmm5VMHcr5HgZPzB-eD0JhpHWGkrRaa6UN_FTcjJ57vAM4VJwzWxFGqpjys4OvZG5cqK8Rh-bvfDZV5BYw6I-l3ZQoYy48BDM6Im1oTm-0AyaeB-3y2p5BW8er21Qqbw47wuFS8iguYozkbIzpGJkK2-QJNIR30qPROexNI"/>
+<div class="absolute bottom-4 left-4 bg-primary text-on-primary px-3 py-1 font-label-caps text-label-caps">ADIDAS</div>
+</div>
+</div>
+</section>
+<!-- CTA Split Section -->
+<section class="flex flex-col md:flex-row border-t-2 border-primary">
+<div class="flex-1 bg-surface-container-highest p-16 md:p-32 flex flex-col justify-center items-start border-b-2 md:border-b-0 md:border-r-2 border-primary">
+<span class="font-label-caps text-label-caps mb-4">NEWSLETTER</span>
+<h2 class="font-headline-lg text-headline-lg uppercase mb-8 leading-tight">STAY IN THE<br/>LOOP. NO CAPS.</h2>
+<div class="w-full flex">
+<input class="flex-1 bg-transparent border-b-2 border-primary p-4 font-label-caps focus:outline-none focus:border-surface-tint transition-colors" placeholder="YOUR@EMAIL.COM" type="email"/>
+<button class="bg-primary text-on-primary px-8 font-button-text hover:bg-surface-tint transition-colors">JOIN</button>
+</div>
+</div>
+<div class="flex-1 min-h-[400px] relative">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="Wide shot of a minimalist streetwear concept store interior with clean white walls and industrial black metal shelving. A few select caps are displayed as art pieces under focused spotlights. The space is vast and empty, emphasizing premium exclusivity and a high-end brutalist aesthetic. The mood is silent, clean, and architecturally focused." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0Mk_lQzWkO5SrhJhWIhY_o2UJI83I2lBleJ9Jo8_YV6RinNJELpv4osvUj-fX23UygaYwvykY_PiOced5YJkRtcyDoBR7-GakY3MPqvKsQ31wFyNhb3e6Qj8GQ8hB512kZrx6hp_i-V7vnHEmgv4JWboDXZ90asz8cT_CbwkOAeqAiqSiGbTMlah8GP4x5p1m-DlIsNmk0wSITa9EHTF0AVz-f-TdMhwtuuFb4nekFHxzEhxyt3YjJJ6SPXLsZ6kNNixYnF3Q0HI"/>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-20 bg-primary dark:bg-tertiary-container border-t-2 border-primary dark:border-outline">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter px-margin-desktop py-12 max-w-container-max mx-auto">
+<div class="flex flex-col gap-6">
+<div class="font-headline-lg text-headline-lg text-on-primary dark:text-on-tertiary-container uppercase">
+                    NO CAPS
+                </div>
+<p class="font-label-caps text-label-caps text-on-primary opacity-70 max-w-md">
+                    WE ARE THE PURVEYORS OF THE MOST AUTHENTIC HEADWEAR CULTURE. EVERY PIECE IN OUR COLLECTION IS HAND-SELECTED AND VERIFIED BY OUR EXPERTS.
+                </p>
+<div class="font-label-caps text-label-caps text-on-primary mt-4">
+                    © 2024 NO CAPS. AUTHENTICITY GUARANTEED.
+                </div>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="flex flex-col gap-4">
+<span class="font-label-caps text-label-caps text-on-primary underline font-bold">NAVIGATION</span>
+<a class="font-label-caps text-label-caps text-on-primary opacity-70 hover:opacity-100 transition-opacity hover:text-surface-tint" href="#">SHOP ALL</a>
+<a class="font-label-caps text-label-caps text-on-primary opacity-70 hover:opacity-100 transition-opacity hover:text-surface-tint" href="#">LATEST DROPS</a>
+<a class="font-label-caps text-label-caps text-on-primary opacity-70 hover:opacity-100 transition-opacity hover:text-surface-tint" href="#">BRAND ARCHIVE</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-label-caps text-label-caps text-on-primary underline font-bold">INFO</span>
+<a class="font-label-caps text-label-caps text-on-primary opacity-70 hover:opacity-100 transition-opacity hover:text-surface-tint" href="#">PRIVACY POLICY</a>
+<a class="font-label-caps text-label-caps text-on-primary opacity-70 hover:opacity-100 transition-opacity hover:text-surface-tint" href="#">TERMS OF SERVICE</a>
+<a class="font-label-caps text-label-caps text-on-primary opacity-70 hover:opacity-100 transition-opacity hover:text-surface-tint" href="#">SHIPPING &amp; RETURNS</a>
+<a class="font-label-caps text-label-caps text-on-primary opacity-70 hover:opacity-100 transition-opacity hover:text-surface-tint" href="#">CONTACT US</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interaction: Invert elements on hover (via CSS, but logic for specific JS triggers can go here)
+        document.querySelectorAll('button').forEach(btn => {
+            btn.addEventListener('mousedown', () => btn.classList.add('scale-95'));
+            btn.addEventListener('mouseup', () => btn.classList.remove('scale-95'));
+        });
+
+        // Atmospheric parallax effect on the hero headline
+        window.addEventListener('mousemove', (e) => {
+            const headline = document.querySelector('h1');
+            const x = (window.innerWidth / 2 - e.pageX) / 40;
+            const y = (window.innerHeight / 2 - e.pageY) / 40;
+            if (window.innerWidth > 768) {
+                headline.style.transform = `translateX(${x}px) translateY(${y}px)`;
+            }
+        });
+    </script>
+</body></html>

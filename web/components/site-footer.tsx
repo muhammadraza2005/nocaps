@@ -1,0 +1,3 @@
+import Link from "next/link";
+
+export function SiteFooter() { return <footer className="site-footer"><div><Link href="/" className="footer-brand">NO CAPS</Link><p>THE DESTINATION FOR AUTHENTIC HEADWEAR.<br />NO HYPE. JUST TRUTH.</p></div><div><span className="footer-label">NAVIGATE</span><Link href="/products">SHOP ALL</Link><Link href="/products">LATEST DROPS</Link><Link href="/auth/login">ACCOUNT</Link></div><div><span className="footer-label">SUPPORT</span><Link href="/">PRIVACY POLICY</Link><Link href="/">TERMS OF SERVICE</Link><Link href="/">CONTACT US</Link></div><small>© 2026 NO CAPS. AUTHENTICITY GUARANTEED.</small></footer>; }

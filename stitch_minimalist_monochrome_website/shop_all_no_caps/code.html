@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NO CAPS | Premium Headwear Catalog</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Hanken+Grotesk:wght@400;500;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed": "#1b1b1b",
+                    "surface-dim": "#dadada",
+                    "surface-tint": "#5e5e5e",
+                    "on-tertiary-container": "#848484",
+                    "inverse-primary": "#c6c6c6",
+                    "inverse-surface": "#303030",
+                    "tertiary-container": "#1b1b1b",
+                    "on-primary-fixed-variant": "#474747",
+                    "outline": "#7e7576",
+                    "inverse-on-surface": "#f1f1f1",
+                    "surface-container-highest": "#e2e2e2",
+                    "background": "#f9f9f9",
+                    "surface": "#f9f9f9",
+                    "on-tertiary": "#ffffff",
+                    "on-surface-variant": "#4c4546",
+                    "surface-container-high": "#e8e8e8",
+                    "error": "#ba1a1a",
+                    "on-background": "#1b1b1b",
+                    "primary-fixed-dim": "#c6c6c6",
+                    "on-secondary-container": "#616363",
+                    "surface-variant": "#e2e2e2",
+                    "on-error-container": "#93000a",
+                    "surface-container": "#eeeeee",
+                    "on-primary-container": "#848484",
+                    "secondary-fixed-dim": "#c6c6c7",
+                    "surface-bright": "#f9f9f9",
+                    "secondary": "#5d5f5f",
+                    "on-tertiary-fixed": "#1b1b1b",
+                    "primary-container": "#1b1b1b",
+                    "tertiary": "#000000",
+                    "on-secondary-fixed": "#1a1c1c",
+                    "primary-fixed": "#e2e2e2",
+                    "secondary-fixed": "#e2e2e2",
+                    "status-success": "#22C55E",
+                    "outline-variant": "#cfc4c5",
+                    "primary": "#000000",
+                    "on-surface": "#1b1b1b",
+                    "tertiary-fixed": "#e2e2e2",
+                    "on-primary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "tertiary-fixed-dim": "#c6c6c6",
+                    "surface-container-low": "#f3f3f3",
+                    "on-secondary": "#ffffff",
+                    "secondary-container": "#dfe0e0",
+                    "error-container": "#ffdad6",
+                    "status-error": "#EF4444",
+                    "on-secondary-fixed-variant": "#454747",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed-variant": "#474747",
+                    "neutral-gray": "#717171"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-max": "1280px",
+                    "gutter": "24px",
+                    "margin-mobile": "16px",
+                    "base": "8px",
+                    "margin-desktop": "40px"
+            },
+            "fontFamily": {
+                    "body-md": ["Hanken Grotesk"],
+                    "button-text": ["Anton"],
+                    "label-caps": ["JetBrains Mono"],
+                    "headline-md": ["Anton"],
+                    "headline-lg-mobile": ["Anton"],
+                    "display-xl": ["Anton"],
+                    "body-lg": ["Hanken Grotesk"],
+                    "headline-lg": ["Anton"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "160%", "fontWeight": "400"}],
+                    "button-text": ["16px", {"lineHeight": "100%", "letterSpacing": "0.05em", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "140%", "fontWeight": "500"}],
+                    "headline-md": ["32px", {"lineHeight": "120%", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["36px", {"lineHeight": "110%", "fontWeight": "400"}],
+                    "display-xl": ["96px", {"lineHeight": "100%", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "160%", "fontWeight": "400"}],
+                    "headline-lg": ["48px", {"lineHeight": "110%", "letterSpacing": "0.02em", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hard-shadow {
+            box-shadow: 4px 4px 0px #000000;
+        }
+        .product-card:hover .product-image {
+            transform: scale(1.05);
+        }
+        .product-image {
+            transition: transform 0.5s ease;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md">
+<!-- TopNavBar -->
+<nav class="w-full sticky top-0 z-50 bg-surface border-b-2 border-primary">
+<div class="flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md text-primary uppercase cursor-pointer active:scale-95">
+                NO CAPS
+            </div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-body-md text-body-md uppercase tracking-wider text-primary border-b-2 border-primary pb-1 cursor-pointer active:scale-95" href="#">SHOP ALL</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-secondary hover:text-primary transition-colors duration-200 cursor-pointer active:scale-95" href="#">NEW ERA</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-secondary hover:text-primary transition-colors duration-200 cursor-pointer active:scale-95" href="#">NIKE</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-secondary hover:text-primary transition-colors duration-200 cursor-pointer active:scale-95" href="#">ADIDAS</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-secondary hover:text-primary transition-colors duration-200 cursor-pointer active:scale-95" href="#">PUMA</a>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden lg:flex items-center border-b border-primary pb-1">
+<span class="material-symbols-outlined text-primary scale-90">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-label-caps font-label-caps placeholder-secondary ml-2 w-32" placeholder="SEARCH CATALOG" type="text"/>
+</div>
+<button class="material-symbols-outlined text-primary cursor-pointer active:scale-95">person</button>
+<div class="relative">
+<button class="material-symbols-outlined text-primary cursor-pointer active:scale-95">shopping_cart</button>
+<span class="absolute -top-2 -right-2 bg-primary text-on-primary text-[10px] font-label-caps w-4 h-4 flex items-center justify-center">2</span>
+</div>
+</div>
+</div>
+</nav>
+<main class="max-w-container-max mx-auto px-margin-desktop py-12">
+<!-- Catalog Header & Filters -->
+<header class="mb-16 border-b-2 border-primary pb-8 flex flex-col md:flex-row justify-between items-end gap-6">
+<div>
+<span class="font-label-caps text-label-caps text-secondary mb-2 block">01 / COLLECTIONS</span>
+<h1 class="font-display-xl text-display-xl uppercase leading-none">ALL CAPS</h1>
+</div>
+<div class="flex flex-wrap gap-4 font-label-caps text-label-caps">
+<button class="px-6 py-2 bg-primary text-on-primary border border-primary hover:bg-surface hover:text-primary transition-all active:scale-95">FILTERS (4)</button>
+<div class="relative group">
+<button class="px-6 py-2 border border-primary flex items-center gap-2 hover:bg-primary hover:text-on-primary transition-all">
+                        SORT BY: FEATURED
+                        <span class="material-symbols-outlined text-sm">expand_more</span>
+</button>
+</div>
+</div>
+</header>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Sidebar Filters - Desktop -->
+<aside class="hidden md:block md:col-span-3 space-y-12">
+<div>
+<h3 class="font-button-text text-button-text uppercase mb-6 tracking-widest border-b border-outline-variant pb-2">BRANDS</h3>
+<ul class="space-y-4 font-label-caps">
+<li class="flex items-center justify-between group cursor-pointer">
+<span class="group-hover:translate-x-1 transition-transform">NEW ERA</span>
+<span class="text-secondary">(24)</span>
+</li>
+<li class="flex items-center justify-between group cursor-pointer">
+<span class="group-hover:translate-x-1 transition-transform">NIKE</span>
+<span class="text-secondary">(18)</span>
+</li>
+<li class="flex items-center justify-between group cursor-pointer">
+<span class="group-hover:translate-x-1 transition-transform">ADIDAS</span>
+<span class="text-secondary">(12)</span>
+</li>
+<li class="flex items-center justify-between group cursor-pointer">
+<span class="group-hover:translate-x-1 transition-transform">MITCHELL &amp; NESS</span>
+<span class="text-secondary">(09)</span>
+</li>
+</ul>
+</div>
+<div>
+<h3 class="font-button-text text-button-text uppercase mb-6 tracking-widest border-b border-outline-variant pb-2">STYLE</h3>
+<ul class="space-y-4 font-label-caps">
+<li class="flex items-center gap-3 cursor-pointer">
+<div class="w-4 h-4 border border-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[12px] font-bold">check</span>
+</div>
+                            SNAPBACK
+                        </li>
+<li class="flex items-center gap-3 cursor-pointer">
+<div class="w-4 h-4 border border-primary"></div>
+                            FITTED
+                        </li>
+<li class="flex items-center gap-3 cursor-pointer">
+<div class="w-4 h-4 border border-primary"></div>
+                            DAD HAT
+                        </li>
+<li class="flex items-center gap-3 cursor-pointer">
+<div class="w-4 h-4 border border-primary"></div>
+                            TRUCKER
+                        </li>
+</ul>
+</div>
+<div>
+<h3 class="font-button-text text-button-text uppercase mb-6 tracking-widest border-b border-outline-variant pb-2">COLOR</h3>
+<div class="grid grid-cols-5 gap-2">
+<div class="aspect-square bg-black border border-primary cursor-pointer hover:scale-110 transition-transform"></div>
+<div class="aspect-square bg-white border border-primary cursor-pointer hover:scale-110 transition-transform"></div>
+<div class="aspect-square bg-blue-900 border border-primary cursor-pointer hover:scale-110 transition-transform"></div>
+<div class="aspect-square bg-red-700 border border-primary cursor-pointer hover:scale-110 transition-transform"></div>
+<div class="aspect-square bg-green-800 border border-primary cursor-pointer hover:scale-110 transition-transform"></div>
+</div>
+</div>
+</aside>
+<!-- Product Grid -->
+<div class="md:col-span-9">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-gutter">
+<!-- Product Card 1 -->
+<div class="product-card group cursor-pointer">
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-container mb-4 border border-primary">
+<img class="product-image w-full h-full object-cover" data-alt="A professional studio product shot of a premium black New Era 59FIFTY fitted cap. The lighting is high-contrast, highlighting the sharp stitch details of a white embroidered logo against the deep matte black fabric. The composition is minimalist and editorial, set against a light gray background that emphasizes the brutalist and clean aesthetic of the streetwear brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_4xS5o2skMSjgY_YDIEjJL8chgFps3cGu-QPL8ifZstHjR8lG8XFsm9L3u79d_XXEGmMq01ea3MH5Iknh4Tw19OEX3tD2st3__TT-J0-UbV6t76T3VrdmcGeDVQv76d7ugMlcsI58ESsaw-t0lwjuTxzsTIacg9ZXcNlVlV4mObsWr0pgeeX7G_AlADAbkFtySUveiXWNOnoFryzKiIJG1soh6A-iKdNlNvFycdvtzjVL4N_eSfcwZ_ek5qPIgs7-2nG7vuIlwSY"/>
+<div class="absolute top-4 left-4 bg-primary text-on-primary font-label-caps px-3 py-1">NEW</div>
+<button class="absolute bottom-4 right-4 bg-on-primary-fixed text-on-primary p-3 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all active:scale-90">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+<div class="space-y-1">
+<span class="font-label-caps text-label-caps text-secondary">NEW ERA</span>
+<h4 class="font-button-text text-button-text uppercase group-hover:underline">59FIFTY AUTHENTIC FITTED</h4>
+<p class="font-label-caps text-label-caps">$45.00</p>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="product-card group cursor-pointer">
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-container mb-4 border border-primary">
+<img class="product-image w-full h-full object-cover" data-alt="A detailed commercial shot of a white Nike Heritage86 adjustable cap. The hat features a small black swoosh logo on the front. The lighting is clean and bright, creating a crisp and premium feel that aligns with a minimalist streetwear identity. The fabric texture is visible, showcasing the high-quality cotton twill." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIhwCWmL4Q2KUuIg4jTYpb62LMCPu_SBWj6Gso39zZGvFRdEyNBpe6u1frBj8maY0Q2liIU-exrHVkRGRHerrMXufkPAe48XJ21Asawx-2X4pc5XJlkZpozmjj2Fxo92CuotqWZjhwGtnfwtqmfWimNvDvr6qhcIqfYgjJFuwuTCrCb_Swn8AAltAA8uC-iJdBaeTEgKgSIg8y2Un71OYHnalwlOCyEGt_pRgoV73AtAPNyt0FM3Yo58GY1kFkxJIpujEVWoxItuw"/>
+<button class="absolute bottom-4 right-4 bg-on-primary-fixed text-on-primary p-3 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all active:scale-90">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+<div class="space-y-1">
+<span class="font-label-caps text-label-caps text-secondary">NIKE</span>
+<h4 class="font-button-text text-button-text uppercase group-hover:underline">HERITAGE86 ESSENTIAL</h4>
+<p class="font-label-caps text-label-caps">$30.00</p>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="product-card group cursor-pointer">
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-container mb-4 border border-primary">
+<img class="product-image w-full h-full object-cover" data-alt="Close-up of a premium navy blue Adidas Trefoil snapback cap. The camera angle is slightly from below to give the product a heroic and authentic presence. High-contrast studio lighting creates deep shadows and bright highlights on the structured crown of the cap. The background is a stark, clean white to match the minimalist brand style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIc3f0HRSyh5B9K26FXZoeihBbetfNHy_rlxaXabzabSMib6IfT4j08EJYk-ZisOyEStt0k-E68MQ7AHK96KK0QiKoOdFK0o8CMqvs6qIjtfwgFQSlzJd2ePxoR8Z_atdgBEovcgiQDDwi0gwgoxNmQamgQsQ5sco6rLjeGAz2-5i0WsWrA-_5YxjkaEtBzV1ymxxUDQ7PFS-CnM6UNHwd6nnEEHR7s63pFWblHlghPBxZPZKC0WYIY1GtCIdjMPhzJhPBl2ahuwY"/>
+<div class="absolute top-4 left-4 bg-error text-on-error font-label-caps px-3 py-1">SALE</div>
+<button class="absolute bottom-4 right-4 bg-on-primary-fixed text-on-primary p-3 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all active:scale-90">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+<div class="space-y-1">
+<span class="font-label-caps text-label-caps text-secondary">ADIDAS</span>
+<h4 class="font-button-text text-button-text uppercase group-hover:underline">ORIGINALS TREFOIL SNAPBACK</h4>
+<div class="flex gap-2 font-label-caps text-label-caps">
+<span class="text-error">$28.00</span>
+<span class="text-secondary line-through">$35.00</span>
+</div>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="product-card group cursor-pointer">
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-container mb-4 border border-primary">
+<img class="product-image w-full h-full object-cover" data-alt="Front view of a minimalist khaki Carhartt WIP Madison Logo cap. The product is shot in a high-fashion editorial style with soft, directional lighting that emphasizes the heavy cotton fabric and tonal embroidery. The palette is muted and earthy, contrasting beautifully with the overall brutalist monochrome website design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTFrIBc5QFDwQ4DBS5S5_6EtKvfs54jOBZ-3cngZxLx7b7GBAq-VRlAlGJdghZMzXuQYDZpibdayQC_HxPb-ogXDuxWmbTWGe0HCTrgfOb-J6f3vIuHZOK6pRYbZzzRggYthF_vT8TxvVAjeg81YgAxelFpSi_mMTeBcw4RIMpLO99fPEN_6PpALvNlXRfXizfi8rjSBfM02oQqKoGuKpiDoNOjO-wc3F6b8xdLsB8PrQZ27LNicXD5xQmhPQJnYwwyEJNux8DABs"/>
+<button class="absolute bottom-4 right-4 bg-on-primary-fixed text-on-primary p-3 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all active:scale-90">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+<div class="space-y-1">
+<span class="font-label-caps text-label-caps text-secondary">CARHARTT WIP</span>
+<h4 class="font-button-text text-button-text uppercase group-hover:underline">MADISON LOGO CAP</h4>
+<p class="font-label-caps text-label-caps">$48.00</p>
+</div>
+</div>
+<!-- Product Card 5 -->
+<div class="product-card group cursor-pointer">
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-container mb-4 border border-primary">
+<img class="product-image w-full h-full object-cover" data-alt="A premium dark forest green New Era 9FORTY adjustable cap featuring a gold embroidered team logo. The image is captured with professional studio equipment, showing extreme sharpness and clarity. The mood is sophisticated and authentic, fitting for a curated streetwear shop focused on high-end headwear." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDE7kgFwBeNGqRczLljKTX_BO-jx5zcieHoPAWVJQn7l166uMToJRZB3TDLNYBSjxfZRYsnYvs9twCFYofjKlUiT-M0apTsJj8Fa5JnuWsasZRszyYmKrR1tUOkP3SZMDPcfOPQzzs6OPyynXHrh-7-qc-LGuztnKV-gGdhvFPSU904hMzDxat7_vtXBdDTlejbVSg8LQArC-AJpG3BtfrGrB2gz45LosHOELAzTI6P-EVxs7DE8M3HMTJyvoerlVre5XESjtgXsMc"/>
+<button class="absolute bottom-4 right-4 bg-on-primary-fixed text-on-primary p-3 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all active:scale-90">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+<div class="space-y-1">
+<span class="font-label-caps text-label-caps text-secondary">NEW ERA</span>
+<h4 class="font-button-text text-button-text uppercase group-hover:underline">9FORTY SEASONAL LEAGUE</h4>
+<p class="font-label-caps text-label-caps">$32.00</p>
+</div>
+</div>
+<!-- Product Card 6 -->
+<div class="product-card group cursor-pointer">
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-container mb-4 border border-primary">
+<img class="product-image w-full h-full object-cover" data-alt="A minimalist grey heathered wool-blend fitted cap. The photography style is brutalist, with the cap positioned centrally in a stark, bright environment. Subtle hard shadows give the product weight and presence. This piece embodies the clean lines and premium quality promised by the NO CAPS brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHmnTGYXjB2D4hBWcdDXkfnNOWXe77CTpyPMrVy2i7k3zMUuvZqyBZycObsPApI1hw_a3j7no_bymVtZhaPZpmUve0FQ2SP3xV835QNF1POOzlV8L0d3WrBVabqZrhzOFmxBB9YriB6Xe1beOYjYaPQQ8K0kh7f5tKum80N8VhLK-4d-YGl_Lgy-rvJlglWEW1_LQkQ5wwFI17JN-AegBXOO-0TxR56VuBlwsXn7Jf_nrRGh8nYI3BYpr-n2Ln9SLxYzxiDW7fvUU"/>
+<button class="absolute bottom-4 right-4 bg-on-primary-fixed text-on-primary p-3 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all active:scale-90">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+<div class="space-y-1">
+<span class="font-label-caps text-label-caps text-secondary">NO CAPS</span>
+<h4 class="font-button-text text-button-text uppercase group-hover:underline">CORE WOOL BLEND FITTED</h4>
+<p class="font-label-caps text-label-caps">$55.00</p>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<div class="mt-20 border-t-2 border-primary pt-12 flex justify-between items-center font-label-caps">
+<span class="text-secondary">SHOWING 1 - 24 OF 148 PRODUCTS</span>
+<div class="flex gap-4">
+<button class="w-10 h-10 border border-primary flex items-center justify-center bg-primary text-on-primary">1</button>
+<button class="w-10 h-10 border border-primary flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors">2</button>
+<button class="w-10 h-10 border border-primary flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors">3</button>
+<button class="w-10 h-10 flex items-center justify-center">...</button>
+<button class="w-10 h-10 border border-primary flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-20 border-t-2 border-primary bg-primary text-on-primary">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter px-margin-desktop py-12 max-w-container-max mx-auto">
+<div class="space-y-8">
+<div class="font-headline-lg text-headline-lg uppercase">NO CAPS</div>
+<p class="font-body-md text-body-md opacity-70 max-w-md">
+                    WE DON'T SELL CAPS. WE SELL AUTHENTICITY. CURATED HEADWEAR FOR THOSE WHO KNOW THE DIFFERENCE.
+                </p>
+<div class="flex gap-6">
+<a class="opacity-70 hover:opacity-100 transition-opacity" href="#">INSTAGRAM</a>
+<a class="opacity-70 hover:opacity-100 transition-opacity" href="#">TWITTER</a>
+<a class="opacity-70 hover:opacity-100 transition-opacity" href="#">DISCORD</a>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="space-y-4">
+<span class="font-label-caps text-label-caps opacity-50 block mb-4 uppercase">NAVIGATE</span>
+<ul class="font-label-caps text-label-caps space-y-2">
+<li><a class="opacity-70 hover:opacity-100 transition-opacity" href="#">SHOP ALL</a></li>
+<li><a class="opacity-70 hover:opacity-100 transition-opacity" href="#">NEW ARRIVALS</a></li>
+<li><a class="opacity-70 hover:opacity-100 transition-opacity" href="#">BEST SELLERS</a></li>
+<li><a class="opacity-70 hover:opacity-100 transition-opacity" href="#">SALE</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<span class="font-label-caps text-label-caps opacity-50 block mb-4 uppercase">SUPPORT</span>
+<ul class="font-label-caps text-label-caps space-y-2">
+<li><a class="opacity-70 hover:opacity-100 transition-opacity" href="#">SHIPPING &amp; RETURNS</a></li>
+<li><a class="opacity-70 hover:opacity-100 transition-opacity" href="#">TERMS OF SERVICE</a></li>
+<li><a class="opacity-70 hover:opacity-100 transition-opacity" href="#">PRIVACY POLICY</a></li>
+<li><a class="opacity-70 hover:opacity-100 transition-opacity" href="#">CONTACT US</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="px-margin-desktop py-6 border-t border-white/10 max-w-container-max mx-auto text-center md:text-left font-label-caps text-label-caps opacity-50">
+            © 2024 NO CAPS. AUTHENTICITY GUARANTEED.
+        </div>
+</footer>
+<!-- FAB (Suppressed on Listing pages per guidelines usually, but if kept for 'Filter' it works on mobile) -->
+<button class="md:hidden fixed bottom-6 right-6 bg-primary text-on-primary w-14 h-14 rounded-full flex items-center justify-center hard-shadow active:scale-95 transition-all z-50">
+<span class="material-symbols-outlined">filter_list</span>
+</button>
+<script>
+        // Micro-interactions
+        document.querySelectorAll('.product-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                const btn = card.querySelector('button');
+                if(btn) btn.classList.remove('opacity-0', 'translate-y-2');
+                if(btn) btn.classList.add('opacity-100', 'translate-y-0');
+            });
+            card.addEventListener('mouseleave', () => {
+                const btn = card.querySelector('button');
+                if(btn) btn.classList.add('opacity-0', 'translate-y-2');
+                if(btn) btn.classList.remove('opacity-100', 'translate-y-0');
+            });
+        });
+
+        // Simple Toggle for Mobile Filters (visual only)
+        const mobileFilterBtn = document.querySelector('.md\\:hidden.fixed.bottom-6.right-6');
+        if(mobileFilterBtn) {
+            mobileFilterBtn.addEventListener('click', () => {
+                alert('Filters module would open here.');
+            });
+        }
+    </script>
+</body></html>
